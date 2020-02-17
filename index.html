@@ -14,12 +14,18 @@
 
     <main id="app">
       <h3 class="month-listings">This Month's Listings</h3>
-      <h4 class="listing-title">{{ listings[0].title }}</h4>
-      <img class="listing-image" :src=listings[0].url alt="image of outerspace">
-      <p class="listing-explanation">{{ listings[0].explanation }}</p>
+
+      <template v-for="listing in listings">
+        <h4 class="listing-title">{{ listing.title }}</h4>
+        <img class="listing-image" :src=listing.url alt="image of outerspace">
+        <p class="listing-date">Listing Date: {{ listing.date }}</p>
+        <p class="listing-explanation">{{ listing.explanation }}</p>
+      </template>
+
     </main>
 
     <script src="https://unpkg.com/vue"></script>
+    <script src="./src/main.js"></script>
     <script>
         new Vue({
             el: '#app',
