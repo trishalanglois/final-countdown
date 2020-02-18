@@ -17,9 +17,7 @@
     components: {
       ListingComponent
     },
-    props: {
-      listings: Array
-    }
+    props: ['listings']
   }
 </script>
 
