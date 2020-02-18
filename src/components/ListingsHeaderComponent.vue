@@ -25,5 +25,6 @@
     font-size: 2.5em;  
     font-weight: bold;  
     text-decoration: underline;
+    color: #252526
 }
 </style>

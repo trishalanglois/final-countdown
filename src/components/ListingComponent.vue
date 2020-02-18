@@ -22,7 +22,7 @@ export default {
 <style scoped>
   .listing-card {
     width: 90%;
-    background-color: #847253;
+    background-color: #252526;
     border: 1px solid black;
     margin: 2em auto;
     text-align: center;
@@ -33,6 +33,7 @@ export default {
     font-family: 'Barlow Semi Condensed', sans-serif;        
     font-size: 3em;
     padding: 1em 1em .25em 1em;
+    color: #F1B312
   }
 
   .card-content {
