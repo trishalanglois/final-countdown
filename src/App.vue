@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <navbar-component></navbar-component>
-        <div class="container">
+        <div class="listings-main">
             <listings-header-component></listings-header-component>
             <listings-container-component :listings='this.listings'
             ></listings-container-component>
@@ -38,4 +38,7 @@
 </script>
 
 <style scoped>
+.listings-main {
+    background-color: #F8F7F2;
+}
 </style>

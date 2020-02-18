@@ -1,7 +1,7 @@
 <template>
   <div>
     <ListingComponent 
-      class="listing-card"
+      class="all-listings-container"
       v-bind:key="listing.date"
       v-for="(listing, i) in this.listings"
       v-bind:listing="listing"
