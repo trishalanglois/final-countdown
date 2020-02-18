@@ -14,9 +14,13 @@ const getEndDate = () => {
   return yyyy + '-' + mm + '-' + dd
 }
 
+const getListings = async () => {
+  const url = `https://api.nasa.gov/planetary/apod?api_key=81wyuIHRfdWbPLRvS1C4zXZoQsy3GlgY2FfMUGuj&start_date=${getStartDate()}&end_date=${getEndDate()}`
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw Error('Error fetching listings');
+  }
+  const listings = await response.json();
 
-
-console.log(getStartDate(), getEndDate())
-
-
-// https://api.nasa.gov/planetary/apod?api_key=81wyuIHRfdWbPLRvS1C4zXZoQsy3GlgY2FfMUGuj&start_date=2020-02-01&end_date=2020-02-16
+  return listings;
+}
