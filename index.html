@@ -7,26 +7,28 @@
 </head>
   <body>
 
-    <header>
-      <h1 class="main-title">Alien Zillow</h1>
-      <h2 class="main-subtitle">We'll help you find an outerspace you'll love.</h2>
-    </header>
+    
 
     <main id="app">
-      <h3 class="month-listings">This Month's Listings</h3>
+      <navbar-component></navbar-component>
+      <body class="listings-container">
+        <listings-header-component></listings-header>
+        <listings-container-component></listings-container>
+      </body>
+      <!-- <h3 class="month-listings">This Month's Listings</h3>
 
       <template v-for="listing in listings">
         <h4 class="listing-title">{{ listing.title }}</h4>
         <img class="listing-image" :src=listing.url alt="image of outerspace">
         <p class="listing-date">Listing Date: {{ listing.date }}</p>
         <p class="listing-explanation">{{ listing.explanation }}</p>
-      </template>
+      </template> -->
 
     </main>
 
     <script src="https://unpkg.com/vue"></script>
     <script src="./src/main.js"></script>
-    <script>
+    <!-- <script>
         new Vue({
             el: '#app',
             data: { 
@@ -51,6 +53,6 @@
               }]
             }
         })
-    </script>
+    </script> -->
   </body>
 </html>
