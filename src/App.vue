@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <navbar-component></navbar-component>
-        <div class="container">
+        <div class="listings-main">
             <listings-header-component></listings-header-component>
             <listings-container-component :listings='this.listings'
             ></listings-container-component>
@@ -27,9 +27,6 @@
                 listings: []
             }
         },
-        methods: {
-
-        },
         mounted () {
             this.listings = getListings()
                 .then(response => this.listings = response.reverse())
@@ -38,4 +35,7 @@
 </script>
 
 <style scoped>
+.listings-main {
+    background-color: #F8F7F2;
+}
 </style>
