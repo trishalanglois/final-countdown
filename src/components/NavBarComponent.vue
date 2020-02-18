@@ -24,7 +24,7 @@ import Logo from '../images/Logo.png';
 
     .main-subtitle {
     font-family: 'Barlow Semi Condensed', sans-serif;        
-    font-size: 1.5em;
+    font-size: 1.75em;
 
     }
 

@@ -31,7 +31,7 @@ export default {
 
   .listing-title {
     font-family: 'Barlow Semi Condensed', sans-serif;        
-    font-size: 2em;
+    font-size: 3em;
     padding: 1em 1em .25em 1em;
   }
 
@@ -40,9 +40,25 @@ export default {
     justify-content: space-between;
   }
 
+  .listing-image {
+    padding: .25em;
+  }
+
   .card-words {
     margin: auto 2em;
     text-align: right;
+  }
+
+  .listing-date {
+    font-weight: bold;
+    font-family: 'Barlow Semi Condensed', sans-serif;        
+    font-size: 2em;
+    padding-right: 1em;
+  }
+
+  .listing-explanation {
+    text-align: left;
+    font-size: 1.1em;
   }
 
 

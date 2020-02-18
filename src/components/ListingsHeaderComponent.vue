@@ -22,7 +22,7 @@
     margin: 0vh 5vh;
     padding-top: 2vh;
     font-family: 'Barlow Semi Condensed', sans-serif;  
-    font-size: 2em;  
+    font-size: 2.5em;  
     font-weight: bold;  
     text-decoration: underline;
 }
