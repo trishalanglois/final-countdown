@@ -14,7 +14,6 @@
 
 </script>
 
-
 <style scoped>
 
 .month-listings {

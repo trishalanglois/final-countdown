@@ -27,9 +27,6 @@
                 listings: []
             }
         },
-        methods: {
-
-        },
         mounted () {
             this.listings = getListings()
                 .then(response => this.listings = response.reverse())
