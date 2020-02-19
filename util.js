@@ -14,8 +14,10 @@ const getEndDate = () => {
   return yyyy + '-' + mm + '-' + dd
 }
 
+
 export const getListings = async () => {
-  const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=81wyuIHRfdWbPLRvS1C4zXZoQsy3GlgY2FfMUGuj&start_date=${getStartDate()}&end_date=${getEndDate()}`);
+  const apiKey = process.env.VUE_APP_NASA_KEY;
+  const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${getStartDate()}&end_date=${getEndDate()}`);
 
   if (!response.ok) {
     throw Error('Error fetching listings');
