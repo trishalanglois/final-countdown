@@ -16,7 +16,7 @@ Note that in order to use this app, you will need your own personal NASA Picture
 
 ## User Interface and User Experience 
 
-![View of rendered listings](https://imgur.com/undefined.png)
+![View of rendered listings](https://imgur.com/fF3VXzP.png)
 
 ## Future Iterations
 
